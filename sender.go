@@ -124,7 +124,7 @@ type SendMessageResponse struct {
 
 func (s *Sender) SendMessage(
 	ctx context.Context, recipient []string, message string,
-) (*SendMessageResponse, error) {
+) (interface{}, error) {
 	smreq := &SendMessageRequest{
 		Credentials: s.Creds,
 		To:          recipient,

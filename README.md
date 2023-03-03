@@ -16,7 +16,7 @@ import (
 
 func main() {
 	creds := movidersms.Credentials{"api-key", "api-secret"}
-	sender := movidersms.NewSender(creds)
+	sender := movidersms.NewSender(creds, []string{})
 
 	res, err := sender.SendMessage(
 		context.Background(),
