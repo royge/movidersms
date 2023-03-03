@@ -1,6 +1,6 @@
-# Smart Messaging Suite API Client
+# Movider API Client
 
-[![Go](https://github.com/royge/smartsms/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/royge/smartsms/actions/workflows/go.yml)
+[![Go](https://github.com/royge/movidersms/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/royge/movidersms/actions/workflows/go.yml)
 
 ## How to Use It
 
@@ -11,12 +11,12 @@ import (
 	"context"
 	"log"
 
-	"github.com/royge/smartsms"
+	"github.com/royge/movidersms"
 )
 
 func main() {
-	creds := smartsms.Credentials{"test@email.com", "Secret"}
-	sender := smartsms.NewSender(creds)
+	creds := movidersms.Credentials{"api-key", "api-secret"}
+	sender := movidersms.NewSender(creds)
 
 	res, err := sender.SendMessage(
 		context.Background(),
