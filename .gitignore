@@ -1,0 +1,14 @@
+*.swp
+*.swo
+Makefile
+
+.envrc
+.envrc.*
+
+vendor/
+
+# binary
+smartsms
+
+# MacOS
+.DS_Store
