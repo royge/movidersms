@@ -2,7 +2,7 @@ module github.com/royge/movidersms
 
 go 1.21
 
-require github.com/nyaruka/phonenumbers v1.1.8
+require github.com/nyaruka/phonenumbers v1.1.9
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
